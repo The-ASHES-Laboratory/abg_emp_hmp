@@ -1,0 +1,52 @@
+# Data files
+data/
+*.biom
+*.qza
+*.qzv
+*.fasta
+*.fastq
+*.fastq.gz
+
+# Results and outputs
+results/
+figures/
+*.tsv
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+dist/
+build/
+*.so
+.venv/
+venv/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Conda
+*.tar.bz2
+*.conda
+
+# OS
+.DS_Store
+Thumbs.db
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# HPC
+*.o[0-9]*
+*.e[0-9]*
+slurm-*.out

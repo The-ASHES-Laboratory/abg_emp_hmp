@@ -1,0 +1,16 @@
+name: abg-emp-hmp-py
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scikit-bio
+  - scikit-learn
+  - scipy
+  - statsmodels
+  - matplotlib
+  - seaborn
+  - biom-format
+  - joblib

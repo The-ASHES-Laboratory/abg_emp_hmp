@@ -1,0 +1,32 @@
+# Note: FEAST must be installed manually after environment creation:
+#   Rscript -e 'devtools::install_github("cozygene/FEAST")'
+name: abg-emp-hmp-r
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base=4.3.*
+  - r-tidyverse
+  - r-data.table
+  - r-ggplot2
+  - r-ggpubr
+  - r-patchwork
+  - r-broom
+  - r-phyloseq
+  - r-vegan
+  - r-ppcor
+  - r-mass
+  - r-lme4
+  - r-argparse
+  - r-qiime2r
+  - r-devtools
+  - r-rcpp
+  - r-rcpparmadillo
+  - r-scales
+  - r-ape
+  - bioconductor-aldex2
+  - bioconductor-ancombc
+  - bioconductor-decontam
+  - bioconductor-treesummarizedexperiment
+  - r-indicspecies
+  - bioconductor-mia
