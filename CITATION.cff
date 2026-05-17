@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+title: "abg_emp_hmp: microbial source tracking of New York African Burial Ground soils against EMP and HMP reference cohorts"
+message: "If you use this software, please cite using the metadata in this file."
+type: software
+authors:
+  - given-names: Carter
+    family-names: Clinton
+    name-particle: D.
+    affiliation: "Department of Biological Sciences, North Carolina State University"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+version: "1.0"
+date-released: "2026-02-23"
+doi: ""
+license: MIT
+repository-code: "https://github.com/The-ASHES-Laboratory/abg_emp_hmp"
+keywords:
+  - microbiome
+  - source tracking
+  - FEAST
+  - bioinformatics
+  - 16S rRNA
+  - ancient DNA
+  - burial soils
+  - Earth Microbiome Project
+  - Human Microbiome Project
+abstract: >
+  Reproducible analysis scripts for microbial source tracking of centuries-old
+  burial soils from the New York African Burial Ground (NYABG). The pipeline
+  compares NYABG burial microbiomes (70 burial samples, 6 controls) with Earth
+  Microbiome Project (17,482 environmental samples) and Human Microbiome
+  Project (4,743 body-site samples) reference cohorts at genus level. Includes
+  FEAST source tracking, IndVal indicator species, ANCOM-BC2 and ALDEx2
+  differential abundance with cross-method consensus, body-site classification,
+  decontamination, and a full sensitivity-and-robustness battery covering
+  rarefaction depth, prevalence filter thresholds, body-region confounds,
+  pseudoreplication, cranial proximity, soil matrix partitioning, and
+  EMP holdout null distributions.
+preferred-citation:
+  type: article
+  authors:
+    - given-names: Carter
+      family-names: Clinton
+      name-particle: D.
+  title: "Manuscript in preparation"
+  year: 2025

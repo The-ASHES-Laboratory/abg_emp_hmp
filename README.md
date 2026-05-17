@@ -10,6 +10,8 @@ The dataset comprises 70 burial samples, 6 control (non-burial) soil samples, 17
 
 > Clinton, C.K. et al. (2025). *Manuscript in preparation.*
 
+See `CITATION.cff` for machine-readable citation metadata.
+
 ## Getting Started
 
 ### Prerequisites
@@ -101,8 +103,15 @@ Scripts expect a QIIME2-exported genus-level feature table (`merged_L6genus.tsv`
 ```
 abg_emp_hmp/
 ├── README.md
-├── LICENSE
+├── LICENSE.md
+├── CHANGELOG.md
+├── CITATION.cff
+├── CONTRIBUTING.md
 ├── .gitignore
+├── docs/
+│   ├── architecture.md          <- pipeline structure and statistical strategy
+│   ├── extending.md             <- adding new cohorts, methods, strata
+│   └── parameters.md            <- key parameters and sensitivity ranges
 ├── envs/
 │   ├── python.yml
 │   └── rstats.yml
@@ -139,6 +148,14 @@ abg_emp_hmp/
     └── 28_burial_vs_control.py
 ```
 
+## Documentation
+
+Additional documentation lives under `docs/`:
+
+- [`architecture.md`](docs/architecture.md) — pipeline structure and statistical strategy
+- [`extending.md`](docs/extending.md) — how to add new reference cohorts, methods, and strata
+- [`parameters.md`](docs/parameters.md) — key parameters and sensitivity ranges
+
 ## License
 
-MIT
+MIT. See `LICENSE.md`.
