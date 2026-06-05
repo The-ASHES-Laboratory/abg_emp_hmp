@@ -8,7 +8,7 @@ The dataset comprises 70 burial samples, 6 control (non-burial) soil samples, 17
 
 ## Citation
 
-> Clinton, C.K. et al. (2025). *Manuscript in preparation.*
+> Clinton, C.K. et al. (2026). *Manuscript in preparation.*
 
 See `CITATION.cff` for machine-readable citation metadata.
 
