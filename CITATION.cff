@@ -3,14 +3,12 @@ title: "abg_emp_hmp: microbial source tracking of New York African Burial Ground
 message: "If you use this software, please cite using the metadata in this file."
 type: software
 authors:
-  - given-names: Carter
+  - given-names: "Carter K."
     family-names: Clinton
-    name-particle: D.
     affiliation: "Department of Biological Sciences, North Carolina State University"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
-version: "1.0"
-date-released: "2026-02-23"
-doi: ""
+    orcid: "https://orcid.org/0000-0003-2669-8200"
+version: "1.0.2"
+date-released: "2026-06-05"
 license: MIT
 repository-code: "https://github.com/The-ASHES-Laboratory/abg_emp_hmp"
 keywords:
@@ -38,8 +36,8 @@ abstract: >
 preferred-citation:
   type: article
   authors:
-    - given-names: Carter
+    - given-names: "Carter K."
       family-names: Clinton
-      name-particle: D.
-  title: "Manuscript in preparation"
-  year: 2025
+      orcid: "https://orcid.org/0000-0003-2669-8200"
+  title: "Human microbiome signatures persist in 300-year-old burial soils: a systematic comparison against the Earth Microbiome Project and Human Microbiome Project"
+  year: 2026
