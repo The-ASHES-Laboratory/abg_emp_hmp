@@ -7,8 +7,8 @@ authors:
     family-names: Clinton
     affiliation: "Department of Biological Sciences, North Carolina State University"
     orcid: "https://orcid.org/0000-0003-2669-8200"
-version: "1.0.2"
-date-released: "2026-06-05"
+version: "1.1.0"
+date-released: "2026-11-13"
 license: MIT
 repository-code: "https://github.com/The-ASHES-Laboratory/abg_emp_hmp"
 keywords:
@@ -17,27 +17,25 @@ keywords:
   - FEAST
   - bioinformatics
   - 16S rRNA
-  - ancient DNA
+  - archaeological soils
   - burial soils
   - Earth Microbiome Project
   - Human Microbiome Project
 abstract: >
-  Reproducible analysis scripts for microbial source tracking of centuries-old
-  burial soils from the New York African Burial Ground (NYABG). The pipeline
-  compares NYABG burial microbiomes (70 burial samples, 6 controls) with Earth
-  Microbiome Project (17,482 environmental samples) and Human Microbiome
-  Project (4,743 body-site samples) reference cohorts at genus level. Includes
-  FEAST source tracking, IndVal indicator species, ANCOM-BC2 and ALDEx2
-  differential abundance with cross-method consensus, body-site classification,
-  decontamination, and a full sensitivity-and-robustness battery covering
-  rarefaction depth, prevalence filter thresholds, body-region confounds,
-  pseudoreplication, cranial proximity, soil matrix partitioning, and
-  EMP holdout null distributions.
+  Reproducible analysis scripts for a reference-database comparison of 16S rRNA
+  gene amplicon profiles from burial soils of the New York African Burial Ground
+  (72 burial samples from 47 burials, 6 non-burial control soils) against the
+  Earth Microbiome Project (17,482 samples) and Human Microbiome Project (4,743
+  samples) at genus level. Includes full-depth denoising, depth-matched FEAST
+  source tracking, indicator species and source networks, ANCOM-BC2 and ALDEx2
+  consensus, cross-validated classifiers with an empirical null, laboratory-control
+  decontamination, mixed models of the anatomical proximity trend, and the
+  figure code for the revised manuscript.
 preferred-citation:
   type: article
   authors:
     - given-names: "Carter K."
       family-names: Clinton
       orcid: "https://orcid.org/0000-0003-2669-8200"
-  title: "Human microbiome signatures persist in 300-year-old burial soils: a systematic comparison against the Earth Microbiome Project and Human Microbiome Project"
+  title: "Human-associated microbial signatures in 300-year-old burial soils from the New York African Burial Ground: a systematic comparison against the Earth Microbiome Project and Human Microbiome Project"
   year: 2026

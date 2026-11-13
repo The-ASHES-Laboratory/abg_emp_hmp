@@ -33,6 +33,8 @@ parser$add_argument("--n-replicates", type = "integer", default = 5L,
 parser$add_argument("--seed", type = "integer", default = 42L)
 parser$add_argument("--em-iterations", type = "integer", default = 1000L)
 parser$add_argument("--out-dir", default = "results/feast_split/")
+parser$add_argument("--overall-only", action = "store_true", default = FALSE,
+                    help = "Stop after overall burial and control FEAST (skip stratified, diagnostic and stability runs)")
 args <- parser$parse_args()
 
 dir.create(args$out_dir, recursive = TRUE, showWarnings = FALSE)
@@ -234,6 +236,8 @@ set.seed(args$seed)
 emp_sub <- stratified_subsample(meta, "emp", "cohort_subsite", args$n_subsample, args$seed)
 hmp_sub <- stratified_subsample(meta, "hmp", "cohort_subsite", args$n_subsample, args$seed)
 source_ids <- c(emp_sub, hmp_sub)
+src_depths <- colSums(count_matrix[, source_ids[source_ids %in% colnames(count_matrix)], drop = FALSE])
+cat(sprintf("  FEAST rarefaction depth (COVERAGE = NULL -> min over sources and sink): min non-zero source depth = %d reads\n", as.integer(min(src_depths[src_depths > 0]))))
 
 # Create source labels
 source_labels <- setNames(
@@ -259,6 +263,11 @@ control_props <- run_feast_for_sinks(
 if (nrow(control_props) > 0) {
   fwrite(control_props, file.path(args$out_dir, "control_source_props.tsv"), sep = "\t")
   cat(sprintf("  Wrote control_source_props.tsv (%d samples)\n", nrow(control_props)))
+}
+
+if (isTRUE(args$overall_only)) {
+  cat("\n--overall-only set: skipping stratified, diagnostic and stability runs\n")
+  quit(save = "no", status = 0)
 }
 
 # ── 3. Body-site-stratified FEAST ────────────────────────────────────────────

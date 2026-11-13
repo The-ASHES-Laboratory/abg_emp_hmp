@@ -10,6 +10,32 @@ All notable changes to this project will be documented in this file. Format foll
 - Snakemake wrapper for end-to-end pipeline execution.
 - Extension to additional reference cohorts beyond EMP and HMP.
 
+## [1.1.0] - 2026-11-13 (revision of the Microbiome submission)
+
+### Added
+- Full-depth workflow on Slurm (`slurm/`): DADA2 re-denoising of all libraries at full read depth (the archived 1.0.x tables used a 30% random read subsample), harmonization, ordination, FEAST, indicator species and networks, differential abundance, classifiers, gradient tests, contamination sensitivity and classifier cross-validation.
+- Depth-matched FEAST: reference sources rarefied to 500 reads (`34_make_depth_matched_sources.py`, `07_feast_source_tracking_v2.R`). With no coverage supplied, FEAST rarefies the sink and all sources to the smallest library in the draw (11 reads in the 1.0.x configuration).
+- EMP reference-pool sensitivity: human-host studies (550, 2192, 1481, 958) and sterile blanks removed (`35_filter_metadata.py`).
+- `10b_da_consensus_oriented.py`: ALDEx2 effects re-oriented to the first-named group before comparison with ANCOM-BC2.
+- `11c_classifier_cv.py`: stratified five-fold cross-validation of the reference classifiers.
+- `30_permdisp_balanced.py`, `31_coverage_richness.py`, `32_gradient_tests.py`, `33_gradient_glmm.R`.
+- `36` to `44`: body-region PERMANOVA, beta and zero-inflated beta GLMMs, burial-level aggregation, blank-based decontamination, handling-associated genera, per-sample human-associated genera, FEAST summaries and gradient tests for each FEAST configuration. These reproduce analyses first run interactively during the revision.
+- `figures/`: scripts for Figs. 1 to 8 and Additional files 1 to 6.
+- `data_release/`: NYABG genus-level read counts (882 genera x 78 samples; SILVA 138, harmonized to the merged reference table) and per-sample metadata (Additional file 7). Raw reads are not included.
+
+### Fixed
+- `10b_da_consensus_oriented.py` selects the ALDEx2 Wilcoxon q value (`wi.eBH`) first, matching `10_da_consensus.py`. Hazel job 1813266 ran an earlier version that selected the Welch q value (`we.eBH`), giving 144 consensus taxa (153 with EMP human-host studies excluded); the released script gives 157 (168), as reported in the manuscript.
+- `04_aitchison_ordination.py`: the F column held the statistic name ("pseudo-F"); it now holds the statistic.
+- `16_confound_permanova.py`: the R2 column held the pseudo-F statistic; R2 is now computed from F. The script read a malformed metadata file and matched no samples; the default is now `abg_16s_meta_clean.tsv`. Superseded by `36_bodyregion_permanova.R`.
+- `31_coverage_richness.py`: the "common" coverage target (minimum observed coverage, 1.0 without singletons) is no longer computed.
+- `11c` and the Slurm jobs reference `scripts/` (previously `scripts_new/`).
+
+### Changed
+- Documentation: taxonomies are SILVA 138 (NYABG, EMP) and RDP classifier (HMP DACC tables), not Greengenes; classifier and parameter descriptions corrected (`docs/parameters.md`); the study aim is stated as detection of human-associated signatures, not persistence of a human microbiome.
+
+### Deprecated
+- `12_decontamination.R` and `13_decontam_check.py` (control soils as the negative set cannot flag taxa that are rare in controls), `16_confound_permanova.py`, `18_pseudorep_permanova.R` (one stratum per reference sample; no permutation possible), `21_staphylococcus_check.py` (genus-level; see 41).
+
 ## [1.0] - 2026-02
 
 ### Added

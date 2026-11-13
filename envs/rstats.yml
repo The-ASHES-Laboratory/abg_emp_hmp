@@ -17,6 +17,7 @@ dependencies:
   - r-ppcor
   - r-mass
   - r-lme4
+  - r-glmmtmb
   - r-argparse
   - r-qiime2r
   - r-devtools

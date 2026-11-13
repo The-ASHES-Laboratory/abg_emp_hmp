@@ -1,3 +1,5 @@
+# NOTE (v1.1.0): the strata design assigns one stratum per reference sample, so no permutation is possible.
+# Superseded by 38_burial_level_aggregation.R.
 # 18_pseudorep_permanova.R
 # By Carter Clinton, Ph.D.
 # Pseudoreplication-Corrected PERMANOVA
