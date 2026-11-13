@@ -1,3 +1,5 @@
+# NOTE (v1.1.0): superseded by 36_bodyregion_permanova.R, which reports the body-region PERMANOVA
+# used in the revised manuscript (Bray-Curtis and Aitchison, permutations restricted within burials).
 # 16_confound_permanova.py
 # By Carter Clinton, Ph.D.
 """
@@ -34,7 +36,7 @@ def parse_args():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--table", default="results/compositional/merged_L6genus.tsv")
     p.add_argument("--metadata", default="results/metadata_cohort_split.tsv")
-    p.add_argument("--nyabg-meta", default="data/nyabg/abg_16s_meta.tsv")
+    p.add_argument("--nyabg-meta", default="data/nyabg/abg_16s_meta_clean.tsv")
     p.add_argument("--out-dir", default="results/sensitivity/")
     p.add_argument("--seed", type=int, default=42)
     return p.parse_args()
@@ -97,7 +99,8 @@ def main():
             grouping = regions.loc[regions.index.isin(dm_ids)]
 
             result = permanova(dm, grouping, permutations=999)
-            r2 = result["test statistic"]
+            F = result["test statistic"]; k = result["number of groups"]; n_ = result["sample size"]
+            r2 = F * (k - 1) / (F * (k - 1) + (n_ - k))
             p = result["p-value"]
             print(f"\n  Body-region PERMANOVA: R²={r2:.4f}, p={p:.4f}")
             rows.append({
@@ -124,7 +127,8 @@ def main():
         cohort_groups = meta.loc[meta.index.isin(dm_ids), "cohort"]
 
         result = permanova(dm, cohort_groups, permutations=999)
-        r2 = result["test statistic"]
+        F = result["test statistic"]; k = result["number of groups"]; n_ = result["sample size"]
+        r2 = F * (k - 1) / (F * (k - 1) + (n_ - k))
         p = result["p-value"]
         print(f"\n  Burial vs Control PERMANOVA: R²={r2:.4f}, p={p:.4f}")
         rows.append({

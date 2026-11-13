@@ -1,0 +1,79 @@
+Sample ID	Burial ID	Sample type	Body region (as recorded)	Proximity level	Control park	Burial number (metadata)	Age category	Age low (yr)	Age high (yr)	Sex	AMSL (ft)	FBG (ft)	Temporal group	Shared burial	Coffin wood	Artifacts present	Shell count	Cluster grave	Raw input reads	Non-chimeric reads	Genus-level depth
+9	9	Burial	Soil_Matrix	Soil Matrix		9	Adult	35.0	45.0	M	5.44	13.64	Middle	N	U	Y	0.0	N	7742	6483	6483
+42	42	Burial	Soil_Matrix	Soil Matrix		42	Infant	0.0	2.0	U	4.92	14.16	Late-Middle	N	U	Y	0.0	N	2510	2003	1993
+43	43	Burial	Soil_Matrix	Soil Matrix		43	Subadult	2.5	4.5	U	6.42	12.66	Late-Middle	N	U	N	0.0	N	3214	2526	2526
+45	45	Burial	Soil_Matrix	Soil Matrix		45	Subadult	2.5	4.5	U	6.77	12.31	Middle	N	U	N	0.0	N	3456	3085	3085
+46	46	Burial	Soil_Matrix	Soil Matrix		46	Adult			F?	5.27	13.81	Middle	N	U	Y	0.0	N	4372	3887	3887
+47	47	Burial	Soil_Matrix	Soil Matrix		47	Adult	35.0	45.0	M	6.42	12.66	Middle	159	U	N	0.0	N	6264	5746	5746
+48	48	Burial	Soil_Matrix	Soil Matrix		48	Adult			U	4.89	14.19	Early	13	U	Y	0.0	N	5246	4889	4889
+49	49	Burial	Soil_Matrix	Soil Matrix		49	Adult	40.0	50.0	F	3.76	15.32	Middle	N	Cedar	Y	0.0	N	6482	5415	5408
+148	148	Burial	Cranium	Cranium		148	Adult	12.0	18.0	U	3.27	15.81	Middle	N	U	Y	0.0	N	8829	7816	7805
+150	150	Burial	Cranium	Cranium		150	Adult	20.0	28.0	F	4.43	14.65	Late	N	U	N	0.0	N	7558	5688	5670
+161	161	Burial	Soil_Matrix	Soil Matrix		161	Subadult			U		16.4	Middle	N	Black Walnut	Y	0.0	N	3398	2982	2982
+197	197	Burial	Soil_Matrix	Soil Matrix		197	Adult	45.0	55.0	F	4.05	15.03	Late	N	U	N	0.0	N	8192	7453	7453
+199A	199	Burial	Soil_Matrix	Soil Matrix		199	Adult	30.0	40.0	F	3.39	15.69	Late	N	U	N	0.0	N	3391	3094	3094
+199B	199	Burial	Infant	Other Body		199	Adult	30.0	40.0	F	3.39	15.69	Late	N	U	N	0.0	N	3317	3029	3015
+201	201	Burial	Soil_Matrix	Soil Matrix		201	Subadult	1.5	3.5	U	3.25	15.83	Late	N	U	N	0.0	N	3667	2947	2926
+202	202	Burial	Soil_Matrix	Soil Matrix		202	Adult	12.0	18.0	F?	3.4	15.68	Early	N	U	N	0.0	N	5570	4687	4677
+204	204	Burial	Soil_Matrix	Soil Matrix		204	Adult			F?	3.81	15.27	Late	219	U	N	1.0	N	7042	5187	5187
+205	205	Burial	Soil_Matrix	Soil Matrix		205	Adult	18.0	20.0	F	0.41	18.67	Late	N	U	N	0.0	N	6906	6175	6175
+207	207	Burial	Soil_Matrix	Soil Matrix		207	Adult	25.0	35.0	F?	3.76	15.32	Late	N	Red Pine	Y	16.0	N	7982	6101	6090
+209	209	Burial	Soil_Matrix	Soil Matrix		209	Adult	40.0	50.0	M	0.43	18.65	Late	N	U	N	3.0	N	6832	4960	4902
+209SM	209	Burial	Soil_Matrix	Soil Matrix		209	Adult	40.0	50.0	M	0.43	18.65	Late	N	U	N	3.0	N	10223	8109	8109
+217A	217	Burial	Upper_Body	Other Body		217	Adult	17.0	19.0	M	1.34	17.74	Late	N	U	N	0.0	N	7594	6992	6992
+217B	217	Burial	Lower_Body	Other Body		217	Adult	17.0	19.0	M	1.34	17.74	Late	N	U	N	0.0	N	1689	1334	1334
+217C	217	Burial	Vert_Cranium	Cranium		217	Adult	17.0	19.0	M	1.34	17.74	Late	N	U	N	0.0	N	1926	1486	1486
+230A	230	Burial	Lower_Body	Other Body		230	Adult	55.0	65.0	F	0.73	18.35	Late	N	U	N	0.0	N	8934	6714	6708
+230B	230	Burial	Upper_Body	Other Body		230	Adult	55.0	65.0	F	0.73	18.35	Late	N	U	N	0.0	N	8658	6663	6647
+235A	235	Burial	Cranium_Scapula_Vert	Cranium		235	Adult	28.0	42.0	F	1.44	17.64	Late-Middle	N	U	N	0.0	N	6247	4995	4995
+235B	235	Burial	Lower_Body	Other Body		235	Adult	28.0	42.0	F	1.44	17.64	Late-Middle	N	U	N	0.0	N	6223	4941	4941
+235C	235	Burial	Upper_Body	Other Body		235	Adult	28.0	42.0	F	1.44	17.64	Late-Middle	N	U	N	0.0	N	6564	5064	5060
+235CRAN	235	Burial	Cranium	Cranium		235	Adult	28.0	42.0	F	1.44	17.64	Late-Middle	N	U	N	0.0	N	1018	746	746
+235D	235	Burial	Cranium_Vert_Scapula_Rib	Cranium		235	Adult	28.0	42.0	F	1.44	17.64	Late-Middle	N	U	N	0.0	N	4242	3452	3452
+239	239	Burial	Pelvis	Other Body		239	Subadult	1.5	3.5	U	3.8	15.28	Middle	N	U	N	0.0	N	13027	11198	11198
+245	245	Burial	Cranium	Cranium		245	Subadult	2.5	4.5	U	3.55	15.53	Middle	N	Cedar	N	0.0	N	12082	10159	9838
+258	258	Burial	Cranium	Cranium		258	Infant	0.0	0.5	U	3.21	15.87	Middle	N	U	N	0.0	N	4146	3373	3373
+259A	259	Burial	Upper_Body	Other Body		259	Adult	17.0	19.0	F?	0.47	18.61	Late	N	U	N	3.0	N	763	506	506
+259B	259	Burial	Lower_Body	Other Body		259	Adult	17.0	19.0	F?	0.47	18.61	Late	N	U	N	3.0	N	7884	6984	6984
+259C	259	Burial	Pelvis	Other Body		259	Adult	17.0	19.0	F?	0.47	18.61	Late	N	U	N	3.0	N	7170	5805	5801
+259LB	259	Burial	Lower_Body	Other Body		259	Adult	17.0	19.0	F?	0.47	18.61	Late	N	U	N	3.0	N	10305	7244	7242
+264	264	Burial	Lower_Body	Other Body		264	Adult			U	4.15	14.93	Early	N	Cedar	Y	0.0	N	8917	5857	5830
+274	274	Burial	Cranium	Cranium		274	**				3.55	15.53		N	U	N	0.0	N	2342	1700	1692
+277	277	Burial	Lower_Body	Other Body		277	Subadult			U	4.01	15.07	Middle	N	U	Y	0.0	N	8207	7167	7167
+282	282	Burial	Innominate	Other Body		282	Adult	32.5	42.5	M	3.35	15.73	Early	N	U	N	7.0	N	8623	7523	7523
+285	285	Burial	Soil_Matrix	Soil Matrix		285	Adult	20.0	30.0	F	3.57	15.51	Middle	121	White Spruce	N	0.0	N	9202	7901	7845
+286A	286	Burial	Upper_Body	Other Body		286	Subadult	4.4	8.5	U	0.61	18.47	Middle	N	U	Y	0.0	N	4210	3737	3737
+286B	286	Burial	Soil_Matrix	Soil Matrix		286	Subadult	4.4	8.5	U	0.61	18.47	Middle	N	U	Y	0.0	N	583	395	395
+286C	286	Burial	Lower_Body	Other Body		286	Subadult	4.4	8.5	U	0.61	18.47	Middle	N	U	Y	0.0	N	5878	4876	4876
+286D	286	Burial	Innominate	Other Body		286	Subadult	4.4	8.5	U	0.61	18.47	Middle	N	U	Y	0.0	N	9440	7875	7875
+287	287	Burial	Cranium	Cranium		287	Adult	18.0	20.0	M	3.63	15.45	Middle	N	U	N	0.0	N	6539	5657	5253
+289	289	Burial	Soil_Matrix	Soil Matrix		289	Subadult	5.0	9.0	U	1.73	17.35	Late-Middle	N	U	N	0.0	N	5939	4807	4807
+289E	289	Burial	Innominate	Other Body		289	Subadult	5.0	9.0	U	1.73	17.35	Late-Middle	N	U	N	0.0	N	8461	6550	6550
+290	290	Burial	Soil_Matrix	Soil Matrix		290	Adult	45.0	55.0	M	2.32	16.76	Late-Middle	N	U	N	1.0	N	924	689	689
+291	291	Burial	Soil_Matrix	Soil Matrix		291						16.4	Unknown	N	U	N	0.0	N	3945	3364	3336
+294	294	Burial	Upper_Body	Other Body		294	Subadult	0.5	1.0	U		16.4	Middle	N	U	Y	0.0	N	4395	3724	3721
+298	298	Burial	Cranium	Cranium		298	Subadult	0.67	1.33	U	1.99	17.09	Middle	N	E. White Pine	N	0.0	N	10462	9580	9580
+301	301	Burial	Lower_Body	Other Body		301	Adult			U	4.17	14.91	Middle	N	U	N	0.0	N	4185	3671	3671
+301A	301	Burial	Lower_Body	Other Body		301	Undetermined			U		16.4	Middle	N	U	N	0.0	N	7110	6276	6276
+302	302	Burial	Lower_Body	Other Body		302	Adult			F?	3.96	15.12	Middle	268	U	N	0.0	N	3883	3016	3016
+302E	302	Burial	Lower_Body	Other Body		302	Adult			F?	3.96	15.12	Middle	268	U	N	0.0	Y	7121	6337	6337
+307A	307	Burial	Upper_Body	Other Body		307	Adult	45.0	55.0	M?	2.02	17.06	Early	N	U	N	70.0	Y	7427	6694	6694
+307B	307	Burial	Upper_Body	Other Body		307	Adult	45.0	55.0	M?	2.02	17.06	Early	N	U	N	70.0	Y	2044	1696	1696
+307LH	307	Burial	Upper_Body	Other Body		307	Adult	45.0	55.0	M?	2.02	17.06	Early	N	U	N	70.0	N	10993	9238	9238
+310-00E	310	Burial	Cranium	Cranium		310	Adult	44.0	52.0	F	2.49	16.59	Middle	N	U	N	0.0	N	3969	3458	3458
+310-01E	310	Burial	Upper_Body	Other Body		310	Adult	44.0	52.0	F	2.49	16.59	Middle	N	U	N	0.0	N	9484	8699	8699
+310A	310	Burial	Vert	Other Body		310	Adult	44.0	52.0	F	2.49	16.59	Middle	N	U	N	0.0	N	8043	2890	2890
+310B	310	Burial	Lower_Body	Other Body		310	Adult	44.0	52.0	F	2.49	16.59	Middle	N	U	N	0.0	N	10514	9914	9914
+310D	310	Burial	Cranium	Cranium		310	Adult	44.0	52.0	F	2.49	16.59	Middle	N	U	N	0.0	N	8053	6733	6733
+310F	310	Burial	Lower_Body	Other Body		310	Adult	44.0	52.0	F	2.49	16.59	Middle	N	U	N	0.0	N	11749	10186	10186
+321	321	Burial	Cranium	Cranium		321	Subadult	1.0	2.0	U	0.39	18.69	Middle	N	U	N	0.0	N	10091	9312	9312
+375	375	Burial	Soil_Matrix	Soil Matrix		375	Adult	16.0	18.0	F	-0.4	19.48	Middle	N	U	N	0.0	N	11292	10151	10151
+376	376	Burial	Soil_Matrix	Soil Matrix		376	Adult	45.0	65.0	M	0.45	18.63	Late-Middle	N	U	N	0.0	N	12185	10548	10548
+389	389	Burial	Soil_Matrix	Soil Matrix		389	Adult			F	1.87	17.21	Early	N	U	N	0.0	N	5497	4525	4174
+62-76	62-76	Burial	Cranium	Cranium		62-76	Adult	25.0	55.0	M	8.33	10.75	Late	N	U	N	0.0	N	8346	7638	7542
+CHP		Control		Control	City Hall Park							2.4							12140	7024	7018
+CMP		Control		Control	Coleman Playground							2.0							13218	9053	8939
+CP		Control		Control	Collect Pond Park							2.87							12715	7838	7836
+DP		Control		Control	Duane Park							3.11							8038	4720	4708
+RP		Control		Control	Rockefeller Park							2.6							3884	2759	2717
+WMP		Control		Control	Washington Market Park							2.7							16421	10144	10136

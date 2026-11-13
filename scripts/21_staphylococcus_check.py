@@ -1,3 +1,4 @@
+# NOTE (v1.1.0): the ASV-level analysis reported in the revision is 41_handling_genera.py.
 # 21_staphylococcus_check.py
 # By Carter Clinton, Ph.D.
 """

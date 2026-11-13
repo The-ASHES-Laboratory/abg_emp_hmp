@@ -1,3 +1,5 @@
+# NOTE (v1.1.0): control soils as the negative set cannot flag taxa that are rare in controls.
+# The revised analysis uses the water control: 39_blank_genus_table.py and 40_decontam_blank.R.
 # 12_decontamination.R
 # By Carter Clinton, Ph.D.
 # Decontamination analysis using R decontam package.

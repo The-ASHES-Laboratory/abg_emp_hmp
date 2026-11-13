@@ -208,7 +208,7 @@ def run_single_replicate(table, metadata, n_sub, rng):
         "prop_explained": prop_explained,
         "global_R2": global_R2,
         "global_p": perm_global["p-value"],
-        "global_F": perm_global["test statistic name"],
+        "global_F": perm_global["test statistic"],
         "pairwise": pairwise_rows,
         "anosim_R": anosim_R,
         "anosim_p": anosim_p,

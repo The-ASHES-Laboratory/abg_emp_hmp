@@ -1,3 +1,4 @@
+# NOTE (v1.1.0): see 39_blank_genus_table.py and 40_decontam_blank.R for the blank-based decontamination.
 # 13_decontam_check.py
 # By Carter Clinton, Ph.D.
 """
